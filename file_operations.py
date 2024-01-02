@@ -1,3 +1,17 @@
+'''
+===================================================================
+Script: 
+File Operations
+
+Purpose:
+simple functions to move, copy and delete files and folders
+
+Notes:
+(1) N/A
+
+===================================================================
+'''
+
 import os
 import shutil
 
@@ -32,19 +46,5 @@ def copy_folder(current_path, target_path):
 def delete_folder(path):
     shutil.rmtree(path) 
     
-         
-if __name__ == '__main__':
-    current_path = 'C:\\Side Projects\\file_mover\\current'
-    target_path = 'C:\\Side Projects\\file_mover\\target'
-
-    file_names = ['text1.txt', 'text2.txt'] 
-    
-    #copy_files(current_path, target_path, file_names)
-    #move_files(current_path, target_path, file_names)
-    #delete_files(target_path, file_names)
-    #move_folder(current_path, 'C:\\Side Projects\\test')
-    #copy_folder('C:\\Side Projects\\test', 'C:\\Side Projects\\file_mover\\current')
-    delete_folder(current_path)
-    delete_folder(target_path)
     
 
